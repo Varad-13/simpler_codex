@@ -1,0 +1,16 @@
+﻿[build-system]
+requires = ['setuptools', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'simpler-codex'
+version = '0.1.0'
+description = 'Windows-first conversational codebase assistant'
+readme = 'README.md'
+requires-python = '>=3.8'
+dependencies = [
+  'openai',
+]
+
+[project.scripts]
+simplercodex = 'simpler_codex.cli:main'
